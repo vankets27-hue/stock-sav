@@ -3,864 +3,1008 @@
     "sap": "60887010",
     "name": "CARTOUCHE CHAUF 315W 230V, ISAN 250",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "61219755",
     "name": "Tube Polyamide semi-rigide 8x6 mm gris",
     "qty": 24.0,
-    "unit": "M"
+    "unit": "M",
+    "threshold": 0
   },
   {
     "sap": "61910025",
     "name": "Huile ESTER RL32H Bidon de 5L",
     "qty": 1.8,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "61910083",
     "name": "Huile ESTER RL32H Bidon de 1L",
     "qty": 3.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "61970090",
     "name": "Fluide frigorigène R452A",
     "qty": 6.17,
-    "unit": "KG"
+    "unit": "KG",
+    "threshold": 0
   },
   {
     "sap": "61970135",
     "name": "Réfrigérant R469A (WT69)  1,0 kg",
     "qty": 0.0,
-    "unit": "KG"
+    "unit": "KG",
+    "threshold": 0
   },
   {
     "sap": "61971022",
     "name": "Fluide frigorigène R404A",
     "qty": 7.79,
-    "unit": "KG"
+    "unit": "KG",
+    "threshold": 0
   },
   {
     "sap": "61971024",
     "name": "FLUIDE FRIGORIGENE R410A",
     "qty": 7.61,
-    "unit": "KG"
+    "unit": "KG",
+    "threshold": 0
   },
   {
     "sap": "61971026",
     "name": "Fluide frigorigène R134A",
     "qty": 10.0,
-    "unit": "KG"
+    "unit": "KG",
+    "threshold": 0
   },
   {
     "sap": "61971027",
     "name": "FLUIDE FRIGORIGENE R449A",
     "qty": 10.8,
-    "unit": "KG"
+    "unit": "KG",
+    "threshold": 0
   },
   {
     "sap": "61971029",
     "name": "Fluide frigorigène R23",
     "qty": 8.86,
-    "unit": "KG"
+    "unit": "KG",
+    "threshold": 0
   },
   {
     "sap": "62216066",
     "name": "Eliminateur vibr 7/8\" 3434FX LONG 29CM",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "62625315",
     "name": "Piquage droit femelle 1/8 x D8mm",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "62630619",
     "name": "Té à piquage mâle au centre, 1/4\" 8mm",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "62631013",
     "name": "CARTOUCHE FILTRE EAU Nylon 350µ",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63143036",
     "name": "Câb. racc.c.mot. bague déph. 5m PVC",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63143345",
     "name": "Câble Eth. RJ45 CAT5e 0,2m jaune droit",
     "qty": 3.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63294025",
     "name": "ADAPT. USB20 TYPE A DB9M 5110079",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63294048",
     "name": "Cable adapteur USB/RS 232,100mm CHIPI-X1",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63301050",
     "name": "Niv EAU SPF097-102 ac gaine therm ss con",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63301053",
     "name": "Niv EAU inox 316L  3/4\"NPT  NO/NC",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63306123",
     "name": "Contact auxiliaire tesysU LUA1 C11",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63306124",
     "name": "Contact auxiliaire tesysU LUF N20",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63306551",
     "name": "Base de puissance TeSysU 12A LUB12",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63306552",
     "name": "unite de controle tesysu 8-32A 24VAC",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63306553",
     "name": "contact additif tesysu 8-32A  LUA1C20",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63306554",
     "name": "Base de puissance tesys LUB32",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63306558",
     "name": "Unite de controle tesysU 0.15à 0.6A 24V~",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63306561",
     "name": "Unité de controle TesysU LUCA05B",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63306569",
     "name": "Unité de controle TeSysU 3-12A LUCA12B",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63350130",
     "name": "Transfo d'intensite 200A rapport 1/1000",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63350220",
     "name": "Transfo d'intensité 200A 50-60Hz 1/1000",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63430211",
     "name": "Contacteur 3P 12A 230V50/60HZ LC1D12P7",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63430212",
     "name": "CONTACTEUR 3P 32A 230V 50/60HZ LC1D32P7",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63430216",
     "name": "CONTACTEUR 3P 32A 24V 50/60HZ LC1D32B7",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63440164",
     "name": "Relais PLC 24VDC/21, 1W 250V 6A",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63440185",
     "name": "relais stat 400v 50A 4-32VDC RM1A40D50H5",
     "qty": 3.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63440187",
     "name": "relais miniature 24VAC 50-60Hz RXM4AB2B7",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63440191",
     "name": "RELAIS MINIATURE 230VAC RXM4AB1P7",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63440233",
     "name": "RELAIS STAT 400V 50A 20-280VAC RM1A40A50",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63440246",
     "name": "RELAIS STATIQUE 32A  3,5-32Vdc",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63443119",
     "name": "Relais Statique 480V 50A 20-280VAC RM1A",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63449045",
     "name": "EMBASE RELAIS EMBROCHABLE RXZE 2S114M",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63510312",
     "name": "Mot. M4Q045-EF01-52 Cond.Kl2000 34W",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63510337",
     "name": "MOTEUR 83D 2535 CONDENSEUR CEV 4131",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63520101",
     "name": "Pompe type MD-6 230V 50-60Hz 5 l/min",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63520392",
     "name": "Pompe 230V / 50 Hz Typ 14000",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63520928",
     "name": "Pompe Oscillation 24V/50Hz Typ14000-33-4",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63521090",
     "name": "Ventilat. axial 172x150x38 230V 50Hz 35W",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63521118",
     "name": "Ventilateur axial, type: AC 4400 FNN",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63570052",
     "name": "PILE BOUTON LITHIUM 3V CR2032+CONNECTEUR",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63620910",
     "name": "Cartouche HLP 20X60 630W 230V",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63650080",
     "name": "DESHY DCL052 1/4 DANFOSS 23Z5002",
     "qty": 3.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63650082",
     "name": "DESHY DCL163S 3/8 DANFOSS 023Z4521",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63650084",
     "name": "DESHY DCL304S 1/2  DANFOSS  023Z4530",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63650094",
     "name": "DESHY DCL053 3/8 DANFOSS 023Z5003",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63650098",
     "name": "DESHY DCL083  3/8 DANFOSS 023Z5005",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63650099",
     "name": "DESHY DCL052S 1/4 DANFOSS 023Z4506",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63650104",
     "name": "DESHY DCL032S 1/4 DANFOSS 23Z4501",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63650105",
     "name": "DESHY DCL053S 3/8 DANFOSS 023Z4509",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63670131",
     "name": "Pressostat KP7B 8...32 bar 1/4\"SAE",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63673014",
     "name": "Pressostat KP7W 8-32bar 1/4\"SAE",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63673264",
     "name": "Capteur pression HP -1.+30bar 4-20mA 520",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63673268",
     "name": "Capteur pression BP -1..19bar 4-20mA 520",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63673274",
     "name": "Pressostat KP7W 8.0-32.0 bar HP ODF",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63680015",
     "name": "Voyant liquide 1/4 SGN6 SAE M-F",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63690067",
     "name": "Vanne pressostatique WVFX 15  flare",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63690071",
     "name": "Vanne pressostatique WVFX 20  flare",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63690214",
     "name": "Orifice pr détend. T00 T2/TE2 braser",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63690215",
     "name": "Orifice pr détend. T01 T2/TE2 braser",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63690223",
     "name": "Orifice pr détend. T06 T2/TE2 braser",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63690226",
     "name": "Orifice pr détend. T0X T2/TE2 braser",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63690261",
     "name": "Orifice pr détend. T1 TE5",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63690262",
     "name": "Orifice pr détend.  T2 TE5 A2-A3-06/1",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63690263",
     "name": "Orifice pr détend. T3 TE5",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63690266",
     "name": "Orifice pr détend. T4 TE5",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63690410",
     "name": "Detend R404A -40/-15 MOP-10 T2 068Z3408",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63690450",
     "name": "Detend R404A -60/-25 MOP-20 T2 068Z3410",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63690477",
     "name": "Detend R23 -90/-55 MOP-50 TE2 068Z3074",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63690574",
     "name": "ORIFICE POUR T/TE2 N°0X CONIQUE",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63690591",
     "name": "ORIFICE POUR T/TE2 N°04 CONIQUE",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63690596",
     "name": "ORIFICE POUR T/TE2 N°05 CONIQUE",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63690598",
     "name": "ORIFICE POUR T/TE2 N°03 CONIQUE",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63690599",
     "name": "ORIFICE POUR T/TE2 N°02 CONIQUE",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63690603",
     "name": "ORIFICE POUR T/TE2 N°01 CONIQUE",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63690604",
     "name": "ORIFICE POUR T/TE2 N°00 CONIQUE",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63690665",
     "name": "EVR3 NC 1/4\" SAE ss bobine",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63690727",
     "name": "Electrovanne EV250B G3/8\" NO",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63690829",
     "name": "Electrovanne corps EVR3 NC ODF 1/4\"",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63690830",
     "name": "Electrovanne EVR6 3/8\" ODF NC 032L1212",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63692048",
     "name": "Detend R404A -60/-25 MOP-20 TE2 068Z3421",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63694024",
     "name": "Boiti. electr.M25 GBC500 12mm br. 2K",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63694028",
     "name": "Électr.élem.vis. M25 VBZ 620 D06-16",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63694060",
     "name": "Electrovanne MD062MMS 6mm av. bobine",
     "qty": 5.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63694061",
     "name": "electrovanne a braser 10mm metric avec b",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63694062",
     "name": "Electrovanne a braser 12mm metric+bobine",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63694069",
     "name": "VANNE FLICA 3/8 MS103S + BOBINE 230V",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63694091",
     "name": "VANNE FLICA 1/4'ODF 24VAC, MD062S",
     "qty": 3.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63694097",
     "name": "VANNE FLICA 1/4'ODF 230VAC, MD062S",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63694160",
     "name": "Electrov.à visser M12 NC AC nouveau H +",
     "qty": 6.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63694162",
     "name": "Corps électrov. M12 LR6  6mm Soudure H +",
     "qty": 3.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63694163",
     "name": "Corps électrov. M12 LR1010mm Soudure H +",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63694164",
     "name": "Corps électrov. M25 LR6 6mm Soudure H +",
     "qty": 0.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63694168",
     "name": "Corp de vanne 1/4\" 45bar Kv 0,15m³/h",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63694191",
     "name": "Corps électrov. M25 10mm Soudure H+",
     "qty": 4.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63694196",
     "name": "Électr.élem.vis. M25 1.6 NC AC/DC H+",
     "qty": 3.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63694201",
     "name": "Boitier elec. vanne M25 LR 6mm souder H+",
     "qty": 4.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63694203",
     "name": "Boitier elec. vanne M25 LR 16mm soud. H+",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63696075",
     "name": "Electrovanne EV210B 1/4G DANFOSS",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63696076",
     "name": "ELECTRO VANNE EAU VIDANGE 3/4 pression e",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63696084",
     "name": "Electrovanne 1/8 NF 220V 50HZ SS CONNEC",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63699006",
     "name": "BOBINE EV 12W 24V/50Hz DANFOSS 018F6707",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63699012",
     "name": "Bobine EV 230/50/60 8 VA",
     "qty": 4.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63699014",
     "name": "Bobine 24V/50-60Hz MBA 003 Offenw",
     "qty": 6.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63699045",
     "name": "BOBINE EV 13W 230/50-60 HONEYWE MC-00005",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63699047",
     "name": "Bobine EV 11W 240V/50Hz   BE240AS",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63699059",
     "name": "BOBINE EV 8W 24V/50-60 HONEYWELL MC0003",
     "qty": 3.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63699060",
     "name": "BOBINE EV 13W 24/50-60Hz 13W MC-00007",
     "qty": 3.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63699090",
     "name": "Bobine 24V 50/60Hz 8W  HF2 9300/RA2",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63700078",
     "name": "BLOC ANTI P 110V Pas18 EV GRAND",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63700080",
     "name": "BLOC ANTI P 220V Pas18 EV GRAND",
     "qty": 4.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63700096",
     "name": "Antiparasite électrov 24V Pas18 à cabler",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63700101",
     "name": "Anti parasites electrovanne 24V câble 5m",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63700106",
     "name": "Bobine p. electrov av.connecteur déporté",
     "qty": 3.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63720070",
     "name": "Testeur d'acidité p. huile Ester ETK",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63720629",
     "name": "manometre 0/2,5b 1/8°g pour regulateur s",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63820088",
     "name": "Limiteur temp. min/max. 20-253V PT100",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63823445",
     "name": "Simpac SD-Card 1 GO incl. Software A2",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63825290",
     "name": "Limiteur bimétal. 220°C  LMB 220",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63825328",
     "name": "THERMOSTAT EMF1+W1 0/200",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63832136",
     "name": "Sonde Pt100 -100/+250°C 3m V4A",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63832138",
     "name": "Sonde 4 con. Pt100 -100/+250 10m V4A",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63832166",
     "name": "Sonde 4 cond. Pt100 -100/250 7m V4A",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63832237",
     "name": "sonde compresseur d=5 l=40mm pt100 cl.B",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63832260",
     "name": "Thermostat EMF9U 0-200°C cuivre 2,0m",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63832308",
     "name": "Sonde 4 cond. Pt100 -100/+250, 4m PTFE",
     "qty": 4.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63832426",
     "name": "PT100-Compresseur-NETCOMP-Lg3m-D=5mm",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63839631",
     "name": "Souris Trackball USB-2",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63950179",
     "name": "FUSIBLE THERMIQUE  172°C 10A 250V G4",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63950181",
     "name": "Fusible thermique 228°C  250V 10A",
     "qty": 6.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63950359",
     "name": "PORTE FUSIBLE FX0380 5x20mm, 10A, 250V",
     "qty": 10.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "63992014",
     "name": "SUPPORT CERAMIQUE POUR LAMPES HALOGENE",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "64645112",
     "name": "capteur de niveau module 04/21",
     "qty": 2.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   },
   {
     "sap": "66119839",
     "name": "Ventilateur groupe cablé 5 7,5 10 CV (Z)",
     "qty": 1.0,
-    "unit": "PCE"
+    "unit": "PCE",
+    "threshold": 0
   }
 ]

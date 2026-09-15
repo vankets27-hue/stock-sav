@@ -1,18 +1,25 @@
-# Stock SAV V3
+STOCK SAV — WEISS TECHNIK — V4
 
-Application PWA destinée à la gestion d'un inventaire de pièces SAV.
+Version mobile/PWA hors connexion.
 
-- 144 références initiales issues du fichier ODS du 11/09/2026
-- colonne ES/ZP48 exclue
-- tri SAP croissant
-- recherche
-- entrées/sorties
-- historique
-- ajout de références
+Fonctions V4 :
+- interface modernisée, sans zoom utilisateur
+- logo/identité Weiss Technik
+- 144 références initiales issues de l'inventaire du 11/09/2026
+- ZP48 exclu
+- seuil d'alerte par défaut à 0
+- écran des articles au seuil, accessible depuis Accueil
+- modification du stock et du seuil depuis la fiche article
+- ajout ou utilisation du stock depuis la fiche article
+- utilisation : numéro d'ordre + nom client obligatoires
+- historique global et historique par article
+- détail des mouvements (date, ordre, client, quantité)
+- quantités à 2 décimales pour L/KG/M et unités assimilées
+- recherche SAP/désignation
 - sauvegarde/restauration JSON
-- export CSV
-- stockage local
-- fonctionnement hors connexion pour la gestion du stock après installation
-- caméra pour cadrage du SAP
+- import/export CSV
+- PWA installable sur iPhone
+- gestion locale par appareil
+- caméra pour capturer un SAP
 
-IMPORTANT : une PWA ne peut pas garantir à elle seule une reconnaissance OCR de texte imprimé 100 % hors connexion sur iPhone. Cette V3 garde tout le stock hors ligne, mais pour une vraie lecture OCR hors ligne fiable, une version native iOS utilisant la reconnaissance de texte du système est préférable.
+IMPORTANT : la V4 ne prétend pas fournir une OCR SAP automatique 100 % hors connexion dans Safari. La capture caméra est disponible ; pour une reconnaissance automatique fiable et totalement hors connexion sur iPhone, une application native iOS utilisant la reconnaissance de texte sur appareil sera nécessaire.
