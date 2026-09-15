@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111827">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Stock SAV">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-192.png">
+<title>Stock SAV</title>
+<style>
+:root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#111827;background:#f3f4f6}
+*{box-sizing:border-box} body{margin:0;padding-bottom:82px}
+header{position:sticky;top:0;z-index:5;background:#111827;color:white;padding:14px 16px calc(14px + env(safe-area-inset-top));box-shadow:0 2px 10px #0002}
+h1{font-size:21px;margin:0}.sub{opacity:.75;font-size:12px;margin-top:3px}
+main{max-width:900px;margin:auto;padding:14px}
+.card{background:white;border-radius:16px;padding:15px;margin-bottom:12px;box-shadow:0 1px 5px #0001}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+button,input,select{font:inherit} button{border:0;border-radius:12px;padding:12px 13px;font-weight:700;background:#111827;color:white}
+button.secondary{background:#e5e7eb;color:#111827}button.green{background:#166534}button.red{background:#991b1b}button.blue{background:#1d4ed8}
+input,select{width:100%;padding:12px;border:1px solid #d1d5db;border-radius:12px;background:white}
+.stat{font-size:25px;font-weight:800}.muted{color:#6b7280;font-size:13px}
+.row{display:flex;gap:9px;align-items:center}.row>*{flex:1}
+.article{display:flex;justify-content:space-between;gap:10px;align-items:center;border-bottom:1px solid #eee;padding:12px 0}
+.article:last-child{border-bottom:0}.sap{font-weight:800;font-variant-numeric:tabular-nums}.qty{font-weight:800;font-size:18px}
+.low{color:#b91c1c}.ok{color:#166534}.hidden{display:none!important}
+nav{position:fixed;bottom:0;left:0;right:0;background:white;border-top:1px solid #ddd;display:grid;grid-template-columns:repeat(4,1fr);z-index:10;padding-bottom:env(safe-area-inset-bottom)}
+nav button{background:white;color:#4b5563;border-radius:0;padding:9px 2px;font-size:11px}nav button.active{color:#111827;font-weight:900}
+video{width:100%;border-radius:14px;background:#000;max-height:48vh;object-fit:cover}
+.badge{display:inline-block;border-radius:999px;padding:4px 8px;background:#e5e7eb;font-size:11px}
+hr{border:0;border-top:1px solid #eee;margin:14px 0}
+textarea{width:100%;min-height:110px;border:1px solid #d1d5db;border-radius:12px;padding:10px}
+</style>
+</head>
+<body>
+<header><h1>📦 Stock SAV</h1><div class="sub">Inventaire véhicule · hors connexion</div></header>
+<main id="app"></main>
+<nav>
+<button data-page="home">🏠<br>Accueil</button>
+<button data-page="scan">📷<br>Scanner</button>
+<button data-page="stock">📋<br>Stock</button>
+<button data-page="more">⚙️<br>Plus</button>
+</nav>
+<script>
+const INITIAL_URL='inventory.json';
+const KEY='stockSAVV3';
+let state=JSON.parse(localStorage.getItem(KEY)||'null');
+if(!state){
+  state={items:[],history:[],thresholds:{},version:1};
+  fetch(INITIAL_URL).then(r=>r.json()).then(items=>{state.items=items;save();render('home')});
+}
+function save(){localStorage.setItem(KEY,JSON.stringify(state))}
+function esc(s){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+function sortItems(){return [...state.items].sort((a,b)=>a.sap.localeCompare(b.sap,undefined,{numeric:true}))}
+function item(sap){return state.items.find(x=>x.sap===sap)}
+function total(){return state.items.reduce((a,x)=>a+(+x.qty||0),0)}
+function render(page='home'){
+ const app=document.getElementById('app');
+ document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===page));
+ if(page==='home') app.innerHTML=home();
+ if(page==='stock') app.innerHTML=stock();
+ if(page==='scan') app.innerHTML=scan();
+ if(page==='more') app.innerHTML=more();
+ bind();
+}
+function home(){
+ const low=state.items.filter(x=>(+x.qty||0)<=((+state.thresholds[x.sap])||0)).length;
+ return `<div class="card"><div class="muted">Références</div><div class="stat">${state.items.length}</div><div class="muted">Total unités : ${total().toFixed(2)}</div></div>
+ <div class="grid">
+ <button class="blue" onclick="render('scan')">📷 Scanner SAP</button>
+ <button onclick="render('stock')">📋 Voir le stock</button>
+ <button class="green" onclick="quickMove('in')">➕ Entrée rapide</button>
+ <button class="red" onclick="quickMove('out')">➖ Sortie rapide</button>
+ </div>
+ <div class="card"><b>⚠️ Seuils</b><div class="stat">${low}</div><div class="muted">référence(s) au seuil ou sous le seuil</div></div>
+ <div class="card"><b>Derniers mouvements</b>${state.history.slice(-5).reverse().map(h=>`<div class="article"><div><span class="sap">${esc(h.sap)}</span><br><span class="muted">${esc(h.name)} · ${esc(h.date)}</span></div><div>${h.delta>0?'➕':'➖'} ${Math.abs(h.delta)}</div></div>`).join('')||'<div class="muted">Aucun mouvement.</div>'}</div>`;
+}
+function stock(){
+ return `<div class="card"><input id="q" placeholder="Rechercher SAP ou désignation…" value="${esc(window._q||'')}"><div class="row" style="margin-top:9px"><button class="secondary" onclick="addItem()">➕ Nouvelle référence</button><button class="secondary" onclick="exportCSV()">📤 Export CSV</button></div></div>
+ <div class="card" id="list">${listHTML()}</div>`;
+}
+function listHTML(){
+ const q=(window._q||'').toLowerCase();
+ const arr=sortItems().filter(x=>!q||x.sap.toLowerCase().includes(q)||x.name.toLowerCase().includes(q));
+ return arr.map(x=>{
+   const th=+state.thresholds[x.sap]||0, low=(+x.qty||0)<=th;
+   return `<div class="article"><div style="min-width:0"><div class="sap">${esc(x.sap)} ${low?'<span class="badge low">STOCK BAS</span>':''}</div><div class="muted">${esc(x.name)}</div></div><div style="text-align:right"><div class="qty ${low?'low':'ok'}">${(+x.qty).toFixed(2).replace(/\.00$/,'')} ${esc(x.unit)}</div><div class="row"><button class="green" onclick="move('${x.sap}',1)">+</button><button class="red" onclick="move('${x.sap}',-1)">−</button></div></div></div>`
+ }).join('')||'<div class="muted">Aucun résultat.</div>';
+}
+function scan(){
+ return `<div class="card"><b>📷 Identifier un SAP</b><p class="muted">Cadre le numéro SAP imprimé sur la pièce. La reconnaissance OCR peut être préchargée lorsque tu es connecté ; la gestion du stock reste disponible hors connexion.</p>
+ <video id="video" autoplay playsinline></video><canvas id="canvas" class="hidden"></canvas>
+ <div class="grid" style="margin-top:9px"><button class="blue" id="startCam">Démarrer caméra</button><button class="secondary" id="capture">Lire l'image</button></div>
+ <hr><label class="muted">Si l'OCR n'est pas disponible hors ligne, saisis le SAP ici :</label><div class="row" style="margin-top:6px"><input id="sapManual" inputmode="numeric" placeholder="Ex. 60887010"><button onclick="findSAP()">Chercher</button></div>
+ <div id="scanResult" style="margin-top:12px"></div></div>
+ <div class="card"><b>💡 Astuce iPhone</b><p class="muted">Pour une reconnaissance 100 % hors connexion directement par l'appareil photo, une version native iOS utilisant la reconnaissance de texte du système sera plus robuste qu'une PWA. Cette V3 garde le stock totalement hors ligne et permet aussi la saisie SAP manuelle.</p></div>`;
+}
+function more(){
+ return `<div class="card"><b>💾 Sauvegarde</b><p class="muted">Les données sont stockées localement sur cet appareil.</p><div class="grid"><button onclick="backup()">Exporter sauvegarde</button><button class="secondary" onclick="document.getElementById('file').click()">Importer sauvegarde</button></div><input id="file" type="file" accept=".json" class="hidden"></div>
+ <div class="card"><b>➕ Ajouter une référence</b><button class="blue" onclick="addItem()">Créer un article</button></div>
+ <div class="card"><b>📜 Historique</b><button class="secondary" onclick="showHistory()">Voir les mouvements</button></div>
+ <div class="card"><b>⚠️ Seuil de stock</b><p class="muted">Le seuil est mémorisé par référence et déclenche l'indication STOCK BAS.</p></div>
+ <div class="card"><b>ℹ️ Installation</b><p class="muted">Une fois installée depuis une adresse HTTPS, l'application peut être utilisée hors connexion pour la gestion du stock. Une connexion est nécessaire pour les mises à jour et, selon la configuration, pour charger l'OCR.</p></div>`;
+}
+function move(sap,delta){
+ const x=item(sap); if(!x)return;
+ if(delta<0 && (+x.qty)+delta<0){alert('Stock insuffisant.');return}
+ x.qty=+x.qty+delta;
+ state.history.push({sap:x.sap,name:x.name,delta,date:new Date().toLocaleString('fr-FR')});
+ save(); render('stock');
+}
+function quickMove(delta){const sap=prompt('SAP de la pièce :');if(sap)item(sap)?move(sap,delta==='in'?1:-1):alert('SAP introuvable.')}
+function addItem(){
+ const sap=(prompt('Code SAP :')||'').trim(); if(!sap)return;
+ if(item(sap)){alert('Cette référence existe déjà.');return}
+ const name=prompt('Désignation :')||'';
+ const qty=parseFloat(prompt('Quantité initiale :','0')||'0');
+ const unit=prompt('Unité (PCE, M, KG…) :','PCE')||'PCE';
+ state.items.push({sap,name,qty:isNaN(qty)?0:qty,unit});save();render('stock');
+}
+function findSAP(){
+ const sap=(document.getElementById('sapManual').value||'').trim(); const x=item(sap);
+ document.getElementById('scanResult').innerHTML=x?`<div class="card"><b>${esc(x.sap)}</b><br>${esc(x.name)}<br><strong>Stock : ${x.qty} ${esc(x.unit)}</strong><div class="grid" style="margin-top:9px"><button class="green" onclick="move('${x.sap}',1)">➕ Entrée</button><button class="red" onclick="move('${x.sap}',-1)">➖ Sortie</button></div></div>`:`<div class="card">❌ SAP non trouvé.<br><button style="margin-top:8px" onclick="addItem()">Créer cette référence</button></div>`;
+}
+let stream=null;
+async function startCamera(){try{stream=await navigator.mediaDevices.getUserMedia({video:{facingMode:{ideal:'environment'}},audio:false});document.getElementById('video').srcObject=stream}catch(e){alert('Caméra inaccessible. Vérifie l’autorisation Safari.')}} 
+async function capture(){const v=document.getElementById('video'),c=document.getElementById('canvas');if(!v.videoWidth){alert('Démarre d’abord la caméra.');return}c.width=v.videoWidth;c.height=v.videoHeight;c.getContext('2d').drawImage(v,0,0);alert('Image capturée. Pour une lecture OCR réellement hors ligne, une version native iOS est recommandée. Tu peux utiliser Live Text de l’iPhone puis coller le SAP dans le champ.')}
+function backup(){const blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='stock-sav-sauvegarde.json';a.click();URL.revokeObjectURL(a.href)}
+function exportCSV(){const rows=[['Article','Désignation article','Quantité','Unité','Seuil'],...sortItems().map(x=>[x.sap,x.name,x.qty,x.unit,state.thresholds[x.sap]||0])];const csv=rows.map(r=>r.map(v=>`"${String(v).replaceAll('"','""')}"`).join(';')).join('\\n');const blob=new Blob([csv],{type:'text/csv;charset=utf-8'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='inventaire-stock-sav.csv';a.click()}
+function showHistory(){document.getElementById('app').innerHTML='<div class="card"><b>📜 Historique</b>'+state.history.slice().reverse().map(h=>`<div class="article"><div><b>${esc(h.sap)}</b><br><span class="muted">${esc(h.name)} · ${esc(h.date)}</span></div><div>${h.delta>0?'➕':'➖'} ${Math.abs(h.delta)}</div></div>`).join('')+'</div>'}
+function bind(){
+ const q=document.getElementById('q'); if(q)q.oninput=()=>{window._q=q.value;document.getElementById('list').innerHTML=listHTML()};
+ const f=document.getElementById('file');if(f)f.onchange=e=>{const r=new FileReader();r.onload=()=>{try{state=JSON.parse(r.result);save();render('home')}catch(_){alert('Sauvegarde invalide.')}};r.readAsText(e.target.files[0])};
+ const s=document.getElementById('startCam');if(s)s.onclick=startCamera;
+ const c=document.getElementById('capture');if(c)c.onclick=capture;
+}
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>render(b.dataset.page));
+if(state?.items?.length)render('home'); else render('home');
+if('serviceWorker' in navigator) window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js'));
+</script>
+</body></html>
